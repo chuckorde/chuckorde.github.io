@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tags | Security, Programing, Analytics</title>
+
+                <link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+      <link rel="canonical" href="http://chuckorde.com/categories/index.html">
+
+
+
+    
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} });
+</script>
+
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+<style>
+
+
+</style>
+</head>
+<body>
+
+
+    <section class="social">
+        <ul>
+                    <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="#" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="../about" title="About me"><i class="icon-user"></i></a></li>
+            <li><a href="https://github.com/chuckorde" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul>
+
+		
+										<!-- AddThis Button BEGIN -->
+<div class="addthis_default_style addthis_32x32_style">
+<a class="icon-social addthis_button_facebook"></a>
+<a class="icon-social addthis_button_google_plusone_share"></a>
+<a class="icon-social addthis_button_linkedin"></a>
+<a class="icon-social addthis_button_twitter"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-537d1a081abd6d13"></script>
+
+
+    </section>
+    <section class="page-content">
+		<div class="logotext">
+<a href="../" style="color:#2e2e2e" title="Home">Chuck Orde</a>
+			<small style="font-size:32px;float:right;padding-top:15px;">Security, Programing, Analytics…</small>
+		</div>
+
+		<div id="distribution" style="float:left"></div>
+        <div class="content" rel="main">
+		<div style="padding-top:200px">
+<article class="tagindex">
+    <header>
+        <h1>Tags</h1>
+    </header>
+</article>
+                    <footer id="footer" role="contentinfo">
+            <p>© 2014. All rights reserved.</p>
+            
+        </footer>
+
+		</div>
+        </div>
+    </section>
+    
+    
+                <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/jquery.timeago.js" type="text/javascript"></script>
+    
+
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+
+
+
+<script type="text/javascript">
+
+function factorial(n) { 
+	if (n <= 1) return 1; 
+	return n*factorial(n-1); 
+} 
+
+function gamma(n){
+	return factorial(n-1)
+}
+
+function variance(a,b) {
+	return a*b / Math.pow(a+b,2) * (a+b+1)
+}
+
+function beta(x,y) {
+	return gamma(x) * gamma(y) / gamma(x+y)
+}
+
+function betapdf(x,a,b){
+	return gamma(a+b) / (gamma(a) * gamma(b)) *
+		Math.pow(x,a-1) * Math.pow(1-x,b-1)
+}
+//////////////////////
+
+
+var N = 75; // shoudl be 100 so we end up with linspace(0,1), but looks better this way
+density = [],
+		data = Array.apply(null, new Array(N)).map(Number.prototype.valueOf,0),
+		rvs = [],
+		w = 890,
+		h = 170,
+		margin = 1.5, // err
+		a = Math.floor(Math.random() * 10) + 1,
+		b = Math.floor(Math.random() * 10) + 2 ,
+		std = Math.pow(variance(a,b), .5),
+		min = 10 - std,
+		max = 10 + std;
+
+////a=b=2;
+
+if(a==1 && b==2) b++; // straight lines are boring.
+
+for(var i=0; i<=N; i++){
+	var pdf = betapdf(i/N, a,b);
+	density.push(pdf);
+
+	var z = Math.random();
+	var rv = (Math.floor(z * (max - min + 1)) + min) / 10 * pdf;
+	rvs.push(rv)
+}
+
+
+	y = d3.scale.linear().domain([0, d3.max(density)]).range([margin, h - margin - 10]),
+	x = d3.scale.linear().domain([0, data.length]).range([0, w])
+
+	var svg = d3.select('#distribution')
+	.append('svg')
+	.attr('width', w)
+	.attr('height', h)
+
+	svg.selectAll('rect')
+	.data(data)
+	.enter()
+	.append('rect')
+	.attr('x', function(d, i) { return i * (w / data.length); })   
+	.attr('y', h) //function(d) {return h - y(d)})
+	.attr('width', w / data.length - 1)   
+	.attr('height',1)
+	.attr('class','bar')
+	.style('opacity', .7)
+
+	var g = svg.append('g')
+	.attr('transform', 'translate(0,'+h+')');
+
+var line = d3.svg.line()
+	.x(function(d,i) { return x(i); })
+	.y(function(d) { return -1 * y(d) -5 }) 
+
+	var g = g.append('path').attr('d', line(density))
+	.style('opacity', 0);
+
+
+	function redraw() {
+		svg.selectAll("rect")
+			.data(data)
+			.transition()
+			.duration(50)
+			.attr("y", function(d) { return h - y(d) + margin})
+			.attr("height", function(d) { return y(d)} );  
+	}
+
+var n = 0;
+var indices = d3.shuffle(
+		Array.apply(null, Array(N)).map(function (_, i) {return i;}));
+
+var interval = setInterval(function() { 
+		data[indices[n]] = rvs[indices[n]];
+		redraw();
+		n++;
+		if(n == N+1) {
+		clearInterval(interval);
+
+		g.style('opacity', .0)
+		.transition()
+		.style("opacity", .8) 
+		.duration(50)
+		}
+		}, 1);
+
+var label = svg.append('text')
+			.attr('dx', -30)
+			.attr('dy', h-30)
+			.text('Beta('+a+','+b+')')
+			.style('font-size','18px')
+			.style('opacity',.5)
+
+if(a > b) label.attr('dx', 8)
+else {
+	label.attr('dx', w-90)
+ 	label.attr('dy', h-80)
+}
+if(a==b) {
+	label.attr('dy', 40)
+	label.attr('dx',10)
+}
+
+/////////////////////
+
+</script>
+
+
+</body>
+</html>
