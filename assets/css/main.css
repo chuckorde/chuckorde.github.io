@@ -19,7 +19,7 @@ path {
   fill: none;
 }
 .bar {
-  fill: #5264ac;
+  fill: #406194;
 }
 #distribution {
   border-bottom: 2px #000 solid;
@@ -2121,7 +2121,7 @@ a:focus {
   text-decoration: underline;
 }
 .social a {
-  color: #5264ac;
+  color: #406194;
   line-height: 51.8px;
   -webkit-transition: text-shadow 0.5s;
   -moz-transition: text-shadow 0.5s;
@@ -2139,7 +2139,7 @@ a:focus {
 .social a:hover,
 .social a:focus {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  color: #5264ac;
+  color: #406194;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
