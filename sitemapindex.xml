@@ -17,6 +17,14 @@
   <lastmod>2014-06-10</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://chuckorde.com/categories/security.xml</loc>
+  <lastmod>2014-06-10</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://chuckorde.com/categories/were-doing-it-wrong.xml</loc>
+  <lastmod>2014-06-10</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://chuckorde.com/galleries/rss.xml</loc>
   <lastmod>2014-06-10</lastmod>
  </sitemap>
