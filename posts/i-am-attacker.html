@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>I Am Attacker | Security, Programming, Analytics</title>
+
+                <link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+      <link rel="canonical" href="http://chuckorde.com/posts/i-am-attacker.html">
+
+
+
+    
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} });
+</script>
+
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+    
+    <meta name="author" content="Chuck Orde">
+            <meta name="og:title" content="I Am Attacker">
+        <meta name="og:url" content="http://chuckorde.com/posts/i-am-attacker.html">
+            <meta name="og:description" content="When I consider the current approach the information security industry is taking to defend our assets against an ever increasing number of attackers with different motives, I can’t help but draw a com">
+        <meta name="og:site_name" content="Security, Programming, Analytics">
+        <meta name="og:type" content="article">
+
+    
+    
+
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+<style>
+
+
+</style>
+</head>
+<body>
+
+
+    <section class="social">
+        <ul>
+                    <li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="../about" title="About me"><i class="icon-user"></i></a></li>
+            <li><a href="https://github.com/chuckorde" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul>
+
+		
+										<!-- AddThis Button BEGIN -->
+<div class="addthis_default_style addthis_32x32_style">
+<a class="icon-social addthis_button_facebook"></a>
+<a class="icon-social addthis_button_google_plusone_share"></a>
+<a class="icon-social addthis_button_linkedin"></a>
+<a class="icon-social addthis_button_twitter"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-537d1a081abd6d13"></script>
+
+
+    </section>
+    <section class="page-content">
+		<div class="logotext">
+<a href="../" style="color:#2e2e2e" title="Home">Chuck Orde</a>
+			<small style="font-size:32px;float:right;padding-top:15px;">Security, Programming, Analytics…</small>
+		</div>
+
+		<div id="distribution" style="float:left"></div>
+        <div class="content" rel="main">
+		<div style="padding-top:200px">
+
+    <div class="post">
+
+
+        <h1 class="p-name entry-title" itemprop="headline name">I Am Attacker</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2014-06-05T02:47:44-04:00">2014-06-05 02:47</time>
+            
+                      |  
+        <a href="i-am-attacker.ipynb" id="sourcelink">Source</a>
+
+            </div>
+			
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../categories/security.html" rel="tag">security</a></li>
+        </ul>
+        </div>
+
+
+        </div>
+        <div class="body">
+            <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When I consider the current approach the information security industry is taking to defend our assets against an ever increasing number of attackers with different motives, I can’t help but draw a comparison between this approach and the approach that was taken by Dr. Robert Neville in the 1954 science fiction novel, “I Am Legend” <!-- TEASER_END --> by Richard Matheson. As a side note, the book is very different from the 2007 movie adaptation starring actor Will Smith.</p>
+<p>If you have not read the book, Neville (presumably the last survivor of a pandemic) spends his time shoring up his defenses against the “infected.” He exists in a seemingly endless cycle of fortifying his home, and constructing weapons to kill vampires. This routine leaves him little time to accomplish the tasks that he feels would improve his overall situation.</p>
+<p>As our hero becomes more efficient in his task of dispatching his enemies, they also adapt, matching his efforts with their own while continuing to maintain their natural advantage of numbers. </p>
+<p>The vampires evolve from rock-throwing nuisances to highly tactical adversaries. They begin to rebuild and a new society emerges. Neville is captured in the end and while awaiting his execution he realizes that the world has changed and that many of the beliefs he held are simply no longer valid in this new world. The story ends with a revelation, where he finally understands that the monsters he had been fighting against were driven by the same motives that drove him. He realizes that they were acting on their own rational self-interest and a desire to survive. </p>
+<p>What does this have to do with information security? </p>
+<p>We use the term “attacker” quite often and without strict definition. The agents of security events come in many forms, but our general approach to this problem is singular. “Think like the attacker.” This approach has left us nailing planks to our windows and stringing garlic along our doors rather than taking strategic steps toward improving our business.</p>
+<p>I don’t subscribe to the popular idea that we must train our security professionals in the same arts of the hackers. We are playing a game that on scale we cannot win. We need to change the game or at least change the rules by which we play it.</p>
+<p>I do, however, think we can benefit from a better understanding of the role the attacker plays in our defenses, or more specifically shedding our current ideas of “the attacker.” They are not mystical creatures that may, at any minute, emerge from the darkness and steal our data. They are people just like the rest of us with specific motives, skills and tools. </p>
+<p>In order to combat cyber criminals, we need only to evaluate their skill and tools. It does not matter who the attackers are; it matters what their capabilities are. </p>
+<p>I remember a time when what we now call information security was underground. If you needed an exploit, or even something as common today as a port scanner, you had to write one. The people who created these tools and exploits were hobbyists, or at least a smaller subset of criminal. The stakes were lower on both sides. It was all very black and white then.</p>
+<p>Times have changed. Today’s attackers, not unlike Matheson’s vampires, have evolved from a rock-throwing nuisance to highly tactical adversaries. Their skills and tools have evolved to meet the new challenges presented by our defenses. </p>
+<p>This comes as no surprise as they have access to the same information and technology that we are creating to combat them. Not to mention that the underground still exists today. Fire up a Tor proxy and for a handful of Bitcoins you can purchase one of the latest “exploit packs” and be on your way to your own criminal empire.</p>
+<p>I have spent the better part of the last two decades honing these very skills. Due to a need in the market for these skills, I have had the benefit of time and focus as well as the opportunity to work and grow with other security professionals.</p>
+<p>I have always enjoyed figuring out how things work, and finding an edge was, to me, more exciting than winning. In board games, and now more prevalently video games, this is called cheating. In the real world this line is a bit fuzzier. </p>
+<p>A competitive edge in business is often the only difference between success and failure. We have to be clever to win, but unlike attackers we are bound by ethics. Like everything else, this comes in degrees and extends beyond security. You have undoubtedly heard someone say: “he really knows how to work the system.” Whether you agree with that person’s tactics or not, he has found an edge.</p>
+<p>Whether you agree is the defining point. The difference between security professionals and attackers is motive. </p>
+<p>We assume that the security professionals that we are training to protect our organization are motivated not to attack us. Their careers, reputation, and morals would be at risk. We hope (and check), simply that they are not criminals. </p>
+<p>There are many things that motivate attackers. Money, politics, hacktivism, or even a grudge could, in the attackers mind, outweigh the things that prevent most people from committing crimes. </p>
+<p>I am not condoning the behavior of cyber criminals (or vampires). I am simply stating that there is no reason to think that they are not acting rationally. Rather than fear the unknown, let’s focus on what we know.</p>
+<p>From this vantage point motive begins to matter less. The way to defend against an attack is to understand the attacker’s capabilities. The rest is just noise.</p>
+<p>Today, there is an abundance of tools that assist with, and in some cases automate attacks on technology. This tactic is designed to identify flaws in an organization’s security program and address them before they are identified by an attacker.</p>
+<p>The problem with this approach is three fold. The attackers are not bound by the same rules, and therefore will always be more agile. The attackers have access to the same tools and may identify gaps in these tools or the functions that they are intended to execute. Finally, and perhaps most importantly, while this approach describes an attack example, there may be many more. The attacker needs only one to be successful, whereas we have to defend against all of them to succeed. </p>
+<p>We have created a game where we are at a disadvantage and have exposed the inner workings of that game to the attacker. The attackers enjoy the same research and work created by the market to fill a need to defend against them. They have a natural advantage.</p>
+<p>Where is our advantage? Visibility. The attackers are trying to gain access, whereas we already have it. All of our processes should take advantage of this head start. Rather than attempting to emulate the attacker, instead we can understand that an attacker is only an agent of an event, and an event can be defined as a collection of data points with probabilities and impacts.</p>
+<p>When we shift our focus away from the attacker, and towards measuring the things that we value, we can begin to maximize the benefits of analytical tools and methodologies that are emerging in the market.</p>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+        </div>
+                <ul class="pager">
+            <li class="previous">
+                <a href="i-cant-drive-55-fun-with-matplotlib.html" rel="prev" title="I can't drive 55 - fun with matplotlib">Previous post</a>
+            </li>
+        </ul>
+
+
+
+                            <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="chuckorde",
+            disqus_url="http://chuckorde.com/posts/i-am-attacker.html",
+        disqus_title="I Am Attacker",
+        disqus_identifier="cache/posts/i-am-attacker.html",
+        disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+    </div>
+
+
+                    <footer id="footer" role="contentinfo">
+            <p>© 2014. All rights reserved.</p>
+            
+        </footer>
+
+		</div>
+        </div>
+    </section>
+    
+    
+                <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/jquery.timeago.js" type="text/javascript"></script>
+    
+
+        <script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+
+
+
+<script type="text/javascript">
+
+function factorial(n) { 
+	if (n <= 1) return 1; 
+	return n*factorial(n-1); 
+} 
+
+function gamma(n){
+	return factorial(n-1)
+}
+
+function variance(a,b) {
+	return a*b / Math.pow(a+b,2) * (a+b+1)
+}
+
+function beta(x,y) {
+	return gamma(x) * gamma(y) / gamma(x+y)
+}
+
+function betapdf(x,a,b){
+	return gamma(a+b) / (gamma(a) * gamma(b)) *
+		Math.pow(x,a-1) * Math.pow(1-x,b-1)
+}
+//////////////////////
+
+
+var N = 75; // shoudl be 100 so we end up with linspace(0,1), but looks better this way
+density = [],
+		data = Array.apply(null, new Array(N)).map(Number.prototype.valueOf,0),
+		rvs = [],
+		w = 890,
+		h = 170,
+		margin = 1.5, // err
+		a = Math.floor(Math.random() * 10) + 1,
+		b = Math.floor(Math.random() * 10) + 2 ,
+		std = Math.pow(variance(a,b), .5),
+		min = 10 - std,
+		max = 10 + std;
+
+////a=b=2;
+
+if(a==1 && b==2) b++; // straight lines are boring.
+
+for(var i=0; i<=N; i++){
+	var pdf = betapdf(i/N, a,b);
+	density.push(pdf);
+
+	var z = Math.random();
+	var rv = (Math.floor(z * (max - min + 1)) + min) / 10 * pdf;
+	rvs.push(rv)
+}
+
+
+	y = d3.scale.linear().domain([0, d3.max(density)]).range([margin, h - margin - 10]),
+	x = d3.scale.linear().domain([0, data.length]).range([0, w])
+
+	var svg = d3.select('#distribution')
+	.append('svg')
+	.attr('width', w)
+	.attr('height', h)
+
+	svg.selectAll('rect')
+	.data(data)
+	.enter()
+	.append('rect')
+	.attr('x', function(d, i) { return i * (w / data.length); })   
+	.attr('y', h) //function(d) {return h - y(d)})
+	.attr('width', w / data.length - 1)   
+	.attr('height',1)
+	.attr('class','bar')
+	.style('opacity', .7)
+
+	var g = svg.append('g')
+	.attr('transform', 'translate(0,'+h+')');
+
+var line = d3.svg.line()
+	.x(function(d,i) { return x(i); })
+	.y(function(d) { return -1 * y(d) -5 }) 
+
+	var g = g.append('path').attr('d', line(density))
+	.style('opacity', 0);
+
+
+	function redraw() {
+		svg.selectAll("rect")
+			.data(data)
+			.transition()
+			.duration(50)
+			.attr("y", function(d) { return h - y(d) + margin})
+			.attr("height", function(d) { return y(d)} );  
+	}
+
+var n = 0;
+var indices = d3.shuffle(
+		Array.apply(null, Array(N)).map(function (_, i) {return i;}));
+
+var interval = setInterval(function() { 
+		data[indices[n]] = rvs[indices[n]];
+		redraw();
+		n++;
+		if(n == N+1) {
+		clearInterval(interval);
+
+		g.style('opacity', .0)
+		.transition()
+		.style("opacity", .8) 
+		.duration(50)
+		}
+		}, 1);
+
+var label = svg.append('text')
+			.attr('dx', -30)
+			.attr('dy', h-30)
+			.text('Beta('+a+','+b+')')
+			.style('font-size','18px')
+			.style('opacity',.5)
+
+if(a > b) label.attr('dx', 8)
+else {
+	label.attr('dx', w-90)
+ 	label.attr('dy', h-80)
+}
+if(a==b) {
+	label.attr('dy', 40)
+	label.attr('dx',10)
+}
+
+/////////////////////
+
+</script>
+
+
+</body>
+</html>

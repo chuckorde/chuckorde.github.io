@@ -6,30 +6,58 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://chuckorde.com/2014/index.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/archive.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/categories/fun.html</loc>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/categories/index.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/categories/matplotlib.html</loc>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/categories/python.html</loc>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/galleries/index.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/index.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/listings/index.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/posts/content-coming-soon.html</loc>
+  <lastmod>2014-06-10</lastmod>
  </url>
  <url>
   <loc>http://chuckorde.com/posts/content-comming-soon.html</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-05-27</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/posts/here-be-dragons.html</loc>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/posts/i-am-attacker.html</loc>
+  <lastmod>2014-06-10</lastmod>
+ </url>
+ <url>
+  <loc>http://chuckorde.com/posts/i-cant-drive-55-fun-with-matplotlib.html</loc>
+  <lastmod>2014-06-10</lastmod>
  </url>
 </urlset>

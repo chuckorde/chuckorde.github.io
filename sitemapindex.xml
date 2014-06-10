@@ -5,15 +5,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://chuckorde.com/categories/fun.xml</loc>
+  <lastmod>2014-06-10</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://chuckorde.com/categories/matplotlib.xml</loc>
+  <lastmod>2014-06-10</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://chuckorde.com/categories/python.xml</loc>
+  <lastmod>2014-06-10</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://chuckorde.com/galleries/rss.xml</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://chuckorde.com/rss.xml</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://chuckorde.com/sitemap.xml</loc>
-  <lastmod>2014-05-22</lastmod>
+  <lastmod>2014-06-10</lastmod>
  </sitemap>
 </sitemapindex>

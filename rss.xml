@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Tue, 27 May 2014 00:42:19 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Content comming soon...</title><link>http://chuckorde.com/posts/content-comming-soon.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Tue, 10 Jun 2014 03:13:55 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Am Attacker</title><link>http://chuckorde.com/posts/i-am-attacker.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;When I consider the current approach the information security industry is taking to defend our assets against an ever increasing number of attackers with different motives, I can’t help but draw a comparison between this approach and the approach that was taken by Dr. Robert Neville in the 1954 science fiction novel, “I Am Legend” &lt;/p&gt;&lt;p&gt;&lt;a href="http://chuckorde.com/posts/i-am-attacker.html"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>security</category><guid>http://chuckorde.com/posts/i-am-attacker.html</guid><pubDate>Thu, 05 Jun 2014 06:47:44 GMT</pubDate></item><item><title>I can't drive 55 - fun with matplotlib</title><link>http://chuckorde.com/posts/i-cant-drive-55-fun-with-matplotlib.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;It's Sunday and all I have is boredom, so I'll recreate and plot the goofy speed limit sign I made for my garage. &lt;/p&gt;&lt;p&gt;&lt;a href="http://chuckorde.com/posts/i-cant-drive-55-fun-with-matplotlib.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>fun</category><category>matplotlib</category><category>python</category><guid>http://chuckorde.com/posts/i-cant-drive-55-fun-with-matplotlib.html</guid><pubDate>Sun, 01 Jun 2014 18:20:26 GMT</pubDate></item><item><title>Content coming soon...</title><link>http://chuckorde.com/posts/content-coming-soon.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -13,4 +27,4 @@
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-</description><guid>http://chuckorde.com/posts/content-comming-soon.html</guid><pubDate>Thu, 22 May 2014 03:08:11 GMT</pubDate></item></channel></rss>
+</description><guid>http://chuckorde.com/posts/content-coming-soon.html</guid><pubDate>Thu, 22 May 2014 03:08:11 GMT</pubDate></item></channel></rss>
