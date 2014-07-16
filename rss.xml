@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Mon, 30 Jun 2014 20:23:36 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>All is Vulnerability</title><link>http://chuckorde.com/posts/all-is-vulnerability.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;In a previous &lt;a href="http://chuckorde.com/posts/i-am-attacker.html"&gt;article&lt;/a&gt; I shared my thoughts on how I believe the current approach to a proactive security program can benefit from a change in perspective. In this article I’ll extend the topic from the “attacker” to the “vulnerability”.&lt;/p&gt;&lt;p&gt;&lt;a href="http://chuckorde.com/posts/all-is-vulnerability.html"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>security</category><category>we're doing it wrong</category><guid>http://chuckorde.com/posts/all-is-vulnerability.html</guid><pubDate>Tue, 10 Jun 2014 06:48:03 GMT</pubDate></item><item><title>I Am Attacker</title><link>http://chuckorde.com/posts/i-am-attacker.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Wed, 16 Jul 2014 19:33:16 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Am Attacker</title><link>http://chuckorde.com/posts/i-am-attacker.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
