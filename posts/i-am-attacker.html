@@ -160,6 +160,9 @@ MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} });
             <li class="previous">
                 <a href="i-cant-drive-55-fun-with-matplotlib.html" rel="prev" title="I can't drive 55 - fun with matplotlib">Previous post</a>
             </li>
+            <li class="next">
+                <a href="all-is-vulnerability.html" rel="next" title="All is Vulnerability">Next post</a>
+            </li>
         </ul>
 
 
@@ -240,7 +243,7 @@ var N = 75; // shoudl be 100 so we end up with linspace(0,1), but looks better t
 density = [],
 		data = Array.apply(null, new Array(N)).map(Number.prototype.valueOf,0),
 		rvs = [],
-		w = 890,
+		w = $('.container').width(),//890,
 		h = 170,
 		margin = 1.5, // err
 		a = Math.floor(Math.random() * 10) + 1,

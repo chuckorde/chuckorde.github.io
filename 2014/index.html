@@ -84,6 +84,9 @@ MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$']]} });
     </header>
     <ul class="postlist">
         <li>
+<a href="../posts/all-is-vulnerability.html" class="listtitle">All is Vulnerability</a> <time class="listdate" datetime="2014-06-10T02:48:03-04:00" title="Publication date">2014-06-10 02:48</time>
+</li>
+        <li>
 <a href="../posts/i-am-attacker.html" class="listtitle">I Am Attacker</a> <time class="listdate" datetime="2014-06-05T02:47:44-04:00" title="Publication date">2014-06-05 02:47</time>
 </li>
         <li>
@@ -146,7 +149,7 @@ var N = 75; // shoudl be 100 so we end up with linspace(0,1), but looks better t
 density = [],
 		data = Array.apply(null, new Array(N)).map(Number.prototype.valueOf,0),
 		rvs = [],
-		w = 890,
+		w = $('.container').width(),//890,
 		h = 170,
 		margin = 1.5, // err
 		a = Math.floor(Math.random() * 10) + 1,
