@@ -195,11 +195,27 @@ ul {list-style-type:square}
 	font-size: 5em;
 }
 
+#blocker{
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background: black;
+	text-align: center;
+	font-size: 2em;
+	z-index: 101;
+}
+
+
 </style>
 
 </head>
 
 <body>
+
 <div id="wait" class="txt">
 	<ul>
 		<li>Wait for the page to load &#10004;</li>
@@ -292,7 +308,7 @@ ul {list-style-type:square}
 			<tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 			<tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 		</table>
-		<p class='note'> &#8592; If zero represent white, and one represents black, then the 16 bit value for zero
+		<p class='note'> &#8592; If zero represents white, and one represents black, then the 16 bit value for zero
 		would be the image on the left.
 		</p>
 	</div>
@@ -423,6 +439,7 @@ ul {list-style-type:square}
 
 <div id='end'>The End.</div>
 
+
 </div>
 
 
@@ -444,6 +461,7 @@ function getdata (url) {
     return json;
 };
 
+$(window).load(function() {
 //var start = getdata('start.js');
 var d0 = getdata('d0.js');
 var d1 = getdata('me.js');
@@ -485,7 +503,6 @@ G.actions.move = function () { // linearly interpolate RGB
 
 for(i=0;i<=24*24;i++)
 	$('<div id="p'+i+'">').appendTo('#pixels');
-
 
 function update(from, to, page, freeze, x, y){
 	for(d in to){
@@ -853,32 +870,26 @@ G.add({
 	stop:{x:0,y:0} 
 	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-// 445 446 69
-
-
 var pix = document.getElementById('p575');
 pix.style.top = 200+20*4;
 pix.style.left = 230;
 pix.style.background = '#fff';
 
+$('#blocker').hide();
+
 window.onscroll = function () {
-	var scroll = window.pageYOffset / G.height / G.pages;
+	var scroll = window.pageYOffset / 500 / G.pages;
 	G.update(scroll);
 }
 
+}); // ready
+
 </script>
+
+<div id="blocker">
+	Loading Data... <div id="info">This may take a few minutes, please be patient.</div>
+</div>
+
 </body>
 </html>
 
