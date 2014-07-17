@@ -57,7 +57,7 @@ ul {list-style-type:square}
 
 .pixel {
 	position: relative;
-	top: 50px;
+	top: 150px;
 	left:50px;
 }
 
@@ -207,6 +207,7 @@ ul {list-style-type:square}
 	text-align: center;
 	font-size: 2em;
 	z-index: 101;
+	display: block;
 }
 
 
@@ -603,7 +604,7 @@ G.add({
 	speed: 1,
 	position: 'fixed',	
 	action:'move', 
-	start:{x:500,y:1000}, 
+	start:{x:800,y:1000}, 
 	stop:{x:500,y:0} 
 	});
 
@@ -623,7 +624,7 @@ G.add({
 	speed: .95,
 	position: 'fixed',	
 	action:'move', 
-	start:{x:500,y:1000}, 
+	start:{x:450,y:1000}, 
 	stop:{x:500,y:0} 
 	});
 
@@ -637,10 +638,21 @@ G.add({
 	stop:{x:500,y:200},
 	});
 
+
+G.add({
+	element:'example2', 
+	page: 6,
+	speed: .99,
+	position: 'fixed',	
+	action:'move', 
+	start:{x:500,y:1000}, 
+	stop:{x:500,y:200} 
+	});
+
 G.add({
 	element:'p303', 
 	page: 6,
-	speed: 1,
+	speed: .93,
 	freezestart: true,
 	freezestop: true,		
 	action:'fade', 
@@ -649,19 +661,9 @@ G.add({
 	});
 
 G.add({
-	element:'example2', 
-	page: 6,
-	speed: 1,
-	position: 'fixed',	
-	action:'move', 
-	start:{x:500,y:1000}, 
-	stop:{x:500,y:200} 
-	});
-
-G.add({
 	element:'p69', 
 	page: 7,
-	speed: 1,
+	speed: .94,
 	freezestart: true,
 	freezestop: true,		
 	action:'fade', 
@@ -672,7 +674,7 @@ G.add({
 G.add({
 	element:'p445', 
 	page: 7,
-	speed: 1,
+	speed: .94,
 	freezestart: true,
 	freezestop: true,		
 	action:'fade', 
@@ -683,7 +685,7 @@ G.add({
 G.add({
 	element:'p446', 
 	page: 7,
-	speed: 1,
+	speed: .94,
 	freezestart: true,
 	freezestop: true,		
 	action:'fade', 
@@ -734,7 +736,7 @@ G.add({
 	freezestart: true,
 	position: 'fixed',	
 	action:'move', 
-	start:{x:500,y:1000}, 
+	start:{x:550,y:1000}, 
 	stop:{x:500,y:200} 
 	});
 
