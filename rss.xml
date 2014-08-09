@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Wed, 16 Jul 2014 19:33:16 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Am Attacker</title><link>http://chuckorde.com/posts/i-am-attacker.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Security, Programming, Analytics</title><link>http://chuckorde.com/</link><description></description><language>en</language><lastBuildDate>Sat, 09 Aug 2014 12:43:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I like to think about pixels</title><link>http://chuckorde.com/posts/i-like-to-think-about-pixels.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I have been thinking about parallax scrolling lately. It's a neat effect.  &lt;/p&gt;
+&lt;p&gt;After looking at a few &lt;a href="http://prinzhorn.github.io/skrollr/"&gt;very good&lt;/a&gt; JavaScript libraries I started thinking about
+some cools things to do with a mouse wheel input.&lt;/p&gt;
+&lt;p&gt;I want to scroll in &lt;em&gt;every direction&lt;/em&gt;, I want to &lt;em&gt;scale&lt;/em&gt; and &lt;em&gt;fade&lt;/em&gt;, I want it all.&lt;/p&gt;&lt;p&gt;&lt;a href="http://chuckorde.com/posts/i-like-to-think-about-pixels.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>fun</category><category>javascript</category><guid>http://chuckorde.com/posts/i-like-to-think-about-pixels.html</guid><pubDate>Sat, 09 Aug 2014 16:22:01 GMT</pubDate></item><item><title>I Am Attacker</title><link>http://chuckorde.com/posts/i-am-attacker.html</link><dc:creator>Chuck Orde</dc:creator><description>&lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
