@@ -18,7 +18,7 @@ body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	margin: 0;
 	text-align: center;
 }
@@ -470,6 +470,7 @@ ul ul, ol ol, ul ol, ol ul {
 }
 .format-chat .entry-content p {
 	margin: 0.5em 0;
+	font-size: 2em;
 }
 .format-chat .entry-content p:nth-child(odd) {
 	font-weight: bold;
