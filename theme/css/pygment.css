@@ -223,10 +223,16 @@ color:#208050;
 	/* text-align: center; */
 }
 
+code {
+	font-size: 14px;
+}
+
 .highlight pre {
 	padding: 5px;
 	padding-left: 40px;
 	line-height: 1.4;
+	/* edit for line nums */
+	font-size: 14px;
 }
 
 .line_num {
@@ -242,6 +248,8 @@ color:#208050;
 	/* width: 30px; */
 	/* overflow: auto; */
 	display:block;
+	/* edit for line nums */
+	font-size: 14px;
 }
 
 .prompt {
@@ -250,7 +258,7 @@ color:#208050;
 
 /* .dataframe { */
 .output_subarea, .output_stream, .output_stderr, .output_text {
-	
+	font-size: 14px;
 }
 
 .output_html, .output_png {

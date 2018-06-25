@@ -18,7 +18,7 @@ body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	/* font-size: 14px; */
 	margin: 0;
 	text-align: center;
 }
@@ -225,7 +225,8 @@ path, line {
 .hentry .main {
 	border-bottom: 1px dashed #ddd;
 	float: left;
-	line-height: 175%;
+	/* edit */
+	line-height: 150%;
 	padding: 29px 5px 15px 15px;
 	text-align: left;
 	width: 90%;
